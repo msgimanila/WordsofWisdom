@@ -2,7 +2,7 @@ angular.module('WordApp.config', [])
 
 // Replace with your Wordpress Blog WP REST API url 
 .constant('WORDPRESS_API_URL', 'http://demowp.x10.bz/wp-json/wp/v2/')
-
+//.constant('WORDPRESS_API_URL', 'http://live-m17.pantheonsite.io/wp-json/')
 // Replace with your Google Project Number https://documentation.onesignal.com/v2.0/docs/android-generating-a-gcm-push-notification-key
 .constant('GOOGLE_PROJECT_NUMBER', '<GOOGLE_PROJECT_NUMBER>')
 
@@ -20,10 +20,10 @@ angular.module('WordApp.config', [])
 .constant('IOS_APP_ID', '<my_app_id>')
 
 // Replace with your Primary Email to send Feedback
-.constant('PRIMARY_EMAIL', 'app@myapp.com')
+.constant('PRIMARY_EMAIL', 'information@hasloonet.work')
 
 // Replace with email to send copy Feedback or leave empty
-.constant('COPY_EMAIL', 'app2@myapp.com')
+.constant('COPY_EMAIL', 'information@hasloonet.work')
 
 // Replace with phone number for send SMS
 .constant('SMS_PHONE_NUMBER', '<SMS_PHONE_NUMBER>');

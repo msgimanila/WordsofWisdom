@@ -39,8 +39,7 @@
 	
 	<div class="padding-bottom">
 	<div class="item comment" ng-if="comments.length < 1">No Comments</div>
-	<div class="item comment" ng-repeat="comment in comments"><h5 class="{{color}}">{{comment.author_name}} <span am-time-ago="comment.date"></span></h5><div ng-bind-html="comment.content.rendered"></div></div><!-- AdGlare Banner Zone: Small-Leaderboard -->
-<iframe src="//hasloonetwork.engine.adglare.org/?612081574&iframe" width="728" height="90" scrolling="no" style="margin:0px; border:0px;"></iframe>
+	<div class="item comment" ng-repeat="comment in comments"><h5 class="{{color}}">{{comment.author_name}} <span am-time-ago="comment.date"></span></h5><div ng-bind-html="comment.content.rendered"></div></div> 
 
 	</div>	
   </ion-content>

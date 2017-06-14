@@ -10,15 +10,15 @@ angular.module('WordApp', ['ionic', 'WordApp.controllers', 'WordApp.services', '
         var admobid = {};
         if (/(android)/i.test(navigator.userAgent)) {
             admobid = { // for Android
-                banner: 'ca-app-pub-7606760144414883/9902261055'
+                banner: 'ca-app-pub-7412105014625589/4090183836'
             };
         } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
             admobid = { // for iOS
-                banner: 'ca-app-pub-7606760144414883/9902261055'
+                banner: 'ca-app-pub-7412105014625589/4090183836'
             };
         } else {
             admobid = { // for Windows Phone
-                banner: 'ca-app-pub-7606760144414883/9902261055'
+                banner: 'cca-app-pub-7412105014625589/4090183836'
             };
         }
 
