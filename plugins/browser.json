@@ -1,0 +1,43 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-admobpro": {
+            "PACKAGE_NAME": "com.ionicframework.wordapp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.wordapp"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.ionicframework.wordapp"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.ionicframework.wordapp"
+        },
+        "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "com.ionicframework.wordapp"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.wordapp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.wordapp"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.wordapp"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.wordapp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-extension": {
+            "PACKAGE_NAME": "com.ionicframework.wordapp"
+        }
+    }
+}
