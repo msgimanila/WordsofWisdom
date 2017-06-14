@@ -28,7 +28,7 @@ angular.module('WordApp', ['ionic', 'WordApp.controllers', 'WordApp.services', '
                 position: AdMob.AD_POSITION.BOTTOM_CENTER,
                 autoShow: true
             });
-
+ 
         // Add additional data (data field in the REST API) when you send your notification with yourUrlKey equal to the url you want to navigate to.
         var notificationOpenedCallback = function(jsonData) {
             if (jsonData.additionalData) {
