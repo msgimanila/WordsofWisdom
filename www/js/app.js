@@ -3,22 +3,24 @@
 // 'WordApp' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'WordApp.controllers' is found in controllers.js
-angular.module('WordApp', ['ionic', 'WordApp.controllers', 'WordApp.services', 'WordApp.filters', 'WordApp.directives', 'WordApp.config', 'angular-cache', 'angularMoment', 'ionicLazyLoad'])
-
+angular.module('WordApp', ['ionic', 'WordApp.controllers', 'WordApp.services', 'WordApp.filters', 'WordApp.directives', 'WordApp.config', 'angular-cache', 'angularMoment', 'ionicLazyLoad' ])
+ 
 .run(function($ionicPlatform, $state, ONESIGNAL_APP_ID, GOOGLE_PROJECT_NUMBER, $rootScope, $ionicHistory) {
     $ionicPlatform.ready(function() {
         var admobid = {};
         if (/(android)/i.test(navigator.userAgent)) {
             admobid = { // for Android
-                banner: 'ca-app-pub-7412105014625589/4090183836'
+                banner: 'ca-app-pub-7606760144414883/9902261055'
             };
         } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
             admobid = { // for iOS
-                banner: 'ca-app-pub-7412105014625589/4090183836'
+                banner: 'ca-app-pub-7606760144414883/9902261055'
             };
         } else {
             admobid = { // for Windows Phone
-                banner: 'cca-app-pub-7412105014625589/4090183836'
+                //banner: 'cca-app-pub-7412105014625589/4090183836'
+				//above is my admob account
+				banner: 'ca-app-pub-7606760144414883/9902261055'
             };
         }
 
@@ -87,9 +89,9 @@ angular.module('WordApp', ['ionic', 'WordApp.controllers', 'WordApp.services', '
         }
     });
 })
-
-.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, CacheFactoryProvider, POSTS_TEMPLATE) {
-
+ 
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, CacheFactoryProvider, POSTS_TEMPLATE ) {
+     
     angular.extend(CacheFactoryProvider.defaults, {
         'storageMode': 'localStorage',
         'capacity': 10,
@@ -168,6 +170,15 @@ angular.module('WordApp', ['ionic', 'WordApp.controllers', 'WordApp.services', '
         views: {
             'menuContent': {
                 templateUrl: "templates/settings.html",
+                controller: 'SettingsCtrl'
+            }
+        }
+    })
+	 .state('app.gallery', {
+        url: "/gallery",
+        views: {
+            'menuContent': {
+                templateUrl: "templates/gallery.html",
                 controller: 'SettingsCtrl'
             }
         }
