@@ -2,6 +2,7 @@ angular.module('WordApp.controllers', [])
 
 .controller('AppCtrl', function($scope, IONIC_APP_COLOR) {
     $scope.color = IONIC_APP_COLOR;
+ 
 })
 
 .controller('PostCtrl', function($scope, $ionicModal, $ionicPopup, $stateParams, DataLoader, WORDPRESS_API_URL, IONIC_APP_COLOR, $ionicLoading, $sce, CacheFactory, $log, Bookmark, $timeout) {

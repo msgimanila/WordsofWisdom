@@ -1,7 +1,7 @@
 angular.module('WordApp.config', [])
 
 // Replace with your Wordpress Blog WP REST API url 
-.constant('WORDPRESS_API_URL', 'http://demowp.x10.bz/wp-json/wp/v2/')
+.constant('WORDPRESS_API_URL', 'http://live-m17.pantheonsite.io/wp-json/wp/v2/')
 //.constant('WORDPRESS_API_URL', 'http://live-m17.pantheonsite.io/wp-json/')
 // Replace with your Google Project Number https://documentation.onesignal.com/v2.0/docs/android-generating-a-gcm-push-notification-key
 .constant('GOOGLE_PROJECT_NUMBER', '<GOOGLE_PROJECT_NUMBER>')
